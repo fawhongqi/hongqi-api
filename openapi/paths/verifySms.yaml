@@ -1,0 +1,54 @@
+post:
+  tags:
+    - Login
+  summary: Verify SMS Code
+  requestBody:
+    required: true
+
+    content:
+      application/json:
+        schema:
+          $ref: '#/components/schemas/verifySms'
+          # type: object
+          example:
+            ruleFlag: defaultRule
+            useFlag: carOwner_app_verifyLogin
+            argeeVersion: '2.0'
+            argeeState: true
+            globalCode: '+47'
+            mobile: '1234567890'
+            model: Samsung Galaxy S20
+            brand: Android
+            verificationCode: '123456'
+            
+  parameters:
+    - $ref: '#/components/parameters/accept-encoding'
+    - $ref: '#/components/parameters/connection'
+    - $ref: '#/components/parameters/content-type'
+    - $ref: '#/components/parameters/host'
+    - $ref: '#/components/parameters/languagecode'
+    - $ref: '#/components/parameters/user-agent'
+    - $ref: '#/components/parameters/deviceId'
+      
+    - $ref: '#/components/parameters/appId'    
+    - $ref: './parameters/query/appkey'
+      
+  x-codeSamples:
+    - lang: 'cURL'
+      label: 'cURL'
+      source: |
+        curl --location --request POST 'https://fawtsp-appgw-eu.faw.cn/user/account/verify/login?appId=M001&appkey=8daece15928bece8b2afb0e12ac3e084' \
+        --header 'accept-encoding: gzip' \
+        --header 'connection: Keep-Alive' \
+        --header 'content-type: application/json' \
+        --header 'host: fawtsp-appgw-eu.faw.cn' \
+        --header 'languagecode: en' \
+        --header 'user-agent: okhttp/3.10.0' \
+        --data-raw '{"ruleFlag":"defaultRule","useFlag":"carOwner_app_verifyLogin","argeeVersion":"2.0","argeeState":true,"globalCode":"+47","mobile":"12345678","model":"Samsung Galaxy S23","brand":"Android","verificationCode":"123456"}'
+
+
+  responses:
+    '200':
+      description: Successful response
+      content:
+        application/json: {}

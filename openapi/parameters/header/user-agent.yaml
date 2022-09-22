@@ -1,0 +1,5 @@
+name: user-agent
+in: header
+schema:
+  type: number
+  default: okhttp/3.10.0

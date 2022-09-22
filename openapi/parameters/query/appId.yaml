@@ -1,0 +1,6 @@
+name: appId
+in: query
+schema:
+  type: string
+  default: M001
+required: true

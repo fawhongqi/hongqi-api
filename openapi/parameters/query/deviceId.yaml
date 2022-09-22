@@ -1,0 +1,4 @@
+name: deviceId
+in: query
+schema:
+  type: string

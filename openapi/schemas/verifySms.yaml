@@ -1,0 +1,25 @@
+title: verify SMS Code
+type: object
+properties:
+  ruleFlag: 
+    type: string
+  useFlag: 
+    type: string
+  argeeVersion: 
+    type: string
+  argeeState: 
+    type: boolean
+  globalCode: 
+    type: string
+  mobile: 
+    type: string
+  model: 
+    type: string
+  brand: 
+    type: string
+  verificationCode: 
+   type: string
+   
+  # placeholder:
+  #   type: string
+  #   description: Placeholder description

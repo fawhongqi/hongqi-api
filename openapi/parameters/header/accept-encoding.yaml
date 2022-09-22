@@ -1,0 +1,5 @@
+name: accept-encoding
+in: header
+schema:
+  type: string
+  default: gzip

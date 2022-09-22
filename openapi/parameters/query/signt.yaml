@@ -1,0 +1,4 @@
+name: signt 
+in: query
+schema:
+  type: integer

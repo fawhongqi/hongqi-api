@@ -1,0 +1,38 @@
+get:
+  tags:
+    - Charge Controls
+  summary: View Battery and Charge Information
+  parameters:
+    - $ref: '#/components/parameters/accept-encoding'
+    - $ref: '#/components/parameters/connection'
+    - $ref: '#/components/parameters/content-type'
+    - $ref: '#/components/parameters/host'
+    - $ref: '#/components/parameters/languagecode'
+    - $ref: '#/components/parameters/user-agent'
+    - $ref: '#/components/parameters/auth_token'      
+      
+    - $ref: '#/components/parameters/vin'      
+    - $ref: '#/components/parameters/type'     
+    - $ref: '#/components/parameters/appkey'         
+    - $ref: '#/components/parameters/nonce'         
+    - $ref: '#/components/parameters/signt'         
+    - $ref: '#/components/parameters/sign'     
+  x-codeSamples:
+    - lang: 'cURL'
+      label: 'cURL'
+      source: |
+        curl --location --request GET 'https://fawtsp-appgw-eu.faw.cn/remote-charging/public/charge/getChargingStatus?type=1&vin=TqCLzB5LR5sASFiiNi8oaNdNAwOOdHGuehbAWxhmk11Y%3D%0A ' \
+        --header 'accept-encoding: gzip' \
+        --header 'auth_token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJtZXNzYWdlIjoiSldUIFJ1bGVzISIsImlhdCI6MTQ1OTQ0ODExOSwiZXhwIjoxNDU5NDU0NTE5fQ.-yIVBD5b73C75osbmwwshQNRC7frWUYrqaTjTpza2y4' \
+        --header 'connection: Keep-Alive' \
+        --header 'content-type: */*' \
+        --header 'host: fawtsp-appgw-eu.faw.cn' \
+        --header 'languagecode: en' \
+        --header 'user-agent: okhttp/3.10.0' \
+        --data-binary '@'
+        
+  responses:
+    '200':
+      description: Successful response
+      content:
+        application/json: {}
