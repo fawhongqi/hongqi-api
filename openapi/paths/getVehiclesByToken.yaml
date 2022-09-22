@@ -1,5 +1,7 @@
 get: 
-  summary: ""
+  tags:
+    - Service  
+  summary: "Get all car details"
   description: ""
   parameters: 
     - $ref: '#/components/parameters/accept-encoding'
@@ -34,5 +36,5 @@ get:
                 description: ""
               vehicleInfos: 
                 type: "string"
-                description: "base64encoded aes encrypted list of all vehicle details"
+                description: "base64encoded aes encrypted string, but contains an array or list of all vehicle details"
 
