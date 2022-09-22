@@ -29,14 +29,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - name: Build Docs
         run: ./make.sh
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3 # https://github.com/peaceiris/actions-gh-pages
 
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
