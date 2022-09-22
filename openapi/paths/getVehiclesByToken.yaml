@@ -17,6 +17,21 @@ get:
     - $ref: '#/components/parameters/signt'         
     - $ref: '#/components/parameters/sign'         
 
+  x-codeSamples:
+    - lang: 'cURL'
+      label: 'cURL'
+      source: |
+        curl --request GET \
+          --url 'https://fawtsp-appgw-eu.faw.cn/vehicle-customer/vehicle/getVehiclesByToken' \
+          --compressed \
+          --header 'accept-encoding: gzip' \
+          --header 'auth_token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJtZXNzYWdlIjoiSldUIFJ1bGVzISIsImlhdCI6MTQ1OTQ0ODExOSwiZXhwIjoxNDU5NDU0NTE5fQ.-yIVBD5b73C75osbmwwshQNRC7frWUYrqaTjTpza2y4' \
+          --header 'connection: Keep-Alive' \
+          --header 'content-type: application/json' \
+          --header 'host: fawtsp-appgw-eu.faw.cn' \
+          --header 'languagecode: en' \
+          --header 'user-agent: okhttp/3.10.0'
+
   responses:
     '200':
       description: Successful response
@@ -36,5 +51,5 @@ get:
                 description: ""
               vehicleInfos: 
                 type: "string"
-                description: "base64encoded aes encrypted string, but contains an array or list of all vehicle details"
+                description: "base64encoded aes encrypted string, but contains an json list with all vehicle details"
 
