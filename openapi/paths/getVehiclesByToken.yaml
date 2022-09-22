@@ -1,0 +1,38 @@
+get: 
+  summary: ""
+  description: ""
+  parameters: 
+    - $ref: '#/components/parameters/accept-encoding'
+    - $ref: '#/components/parameters/connection'
+    - $ref: '#/components/parameters/content-type'
+    - $ref: '#/components/parameters/host'
+    - $ref: '#/components/parameters/languagecode'
+    - $ref: '#/components/parameters/user-agent'
+    - $ref: '#/components/parameters/auth_token'     
+          
+    - $ref: '#/components/parameters/appkey'         
+    - $ref: '#/components/parameters/nonce'         
+    - $ref: '#/components/parameters/signt'         
+    - $ref: '#/components/parameters/sign'         
+
+  responses:
+    '200':
+      description: Successful response
+      content:
+        application/json: 
+          schema: 
+            type: "object"
+            properties: 
+              status: 
+                type: "string"
+                description: ""
+              errorCode: 
+                type: "string"
+                description: ""
+              errorMessage: 
+                type: "string"
+                description: ""
+              vehicleInfos: 
+                type: "string"
+                description: "base64encoded aes encrypted list of all vehicle details"
+

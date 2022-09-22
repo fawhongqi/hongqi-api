@@ -55,6 +55,9 @@ paths:
     $ref:  './paths/getChargingStatus.yaml'
   /location/public/location/getLastLocation:
     $ref:  './paths/getLastLocation.yaml'      
+  /vehicle-customer/vehicle/getVehiclesByToken:
+    $ref:  './paths/getVehiclesByToken.yaml' 
+
 
 components:
   parameters:
