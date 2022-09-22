@@ -33,10 +33,12 @@ jobs:
         run: ./make.sh
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3 # https://github.com/peaceiris/actions-gh-pages
+
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          deploy_key: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
           force_orphan: true
           exclude_assets: '.github,openapi,.redocly.yaml,LICENSE,README.md,make.sh'
