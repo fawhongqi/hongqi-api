@@ -1,0 +1,72 @@
+title: Login success
+type: "object"
+properties: 
+  status: 
+    type: "string"
+    description: ""
+  errorCode: 
+    type: "string"
+    description: ""
+  errorMessage: 
+    type: "string"
+    description: ""
+  accountVo: 
+    type: "object"
+    properties: 
+      id: 
+        type: "number"
+        description: ""
+      name: 
+        type: "string"
+        description: ""
+      mobile: 
+        type: "string"
+        description: ""
+      email: 
+        type: "string"
+        description: ""
+      ifFirstLogin: 
+        type: "string"
+        description: ""
+      ifBindEmail: 
+        type: "string"
+        description: ""
+      ifBindDevice: 
+        type: "string"
+        description: ""
+      ifChangeDevice: 
+        type: "string"
+        description: ""
+      nickName: 
+        type: "string"
+        description: ""
+      colorToken: 
+        type: "string"
+        description: ""
+      colorRefreshToken: 
+        type: "string"
+        description: ""
+      grayToken: 
+        type: "string"
+        description: ""
+      grayRefreshToken: 
+        type: "string"
+        description: ""
+      accType: 
+        type: "string"
+        description: ""
+      aid: 
+        type: "string"
+        description: ""
+      headPicPath: 
+        type: "string"
+        description: ""
+      loginType: 
+        type: "string"
+        description: ""
+      token: 
+        type: "string"
+        description: ""
+      cid: 
+        type: "string"
+        description: ""

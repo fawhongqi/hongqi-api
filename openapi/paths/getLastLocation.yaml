@@ -33,4 +33,6 @@ get:
     '200':
       description: Successful response
       content:
-        application/json: {}
+        application/json: 
+          schema: 
+            $ref: '#/components/schemas/locationResponse'        

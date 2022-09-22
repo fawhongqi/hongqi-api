@@ -103,6 +103,13 @@ components:
   schemas:
     verifySms:
       $ref:  './schemas/verifySms.yaml'
-
+    smsLoginResponse:
+      $ref: './schemas/smsLoginResponse.yaml'
+    success200:
+      $ref: './schemas/success200.yaml'
+    chargeResponse:
+      $ref: './schemas/chargeResponse.yaml'
+    locationResponse:
+      $ref: './schemas/locationResponse.yaml'
 #   responses:
 #     $ref:  './responses/_index.yaml'

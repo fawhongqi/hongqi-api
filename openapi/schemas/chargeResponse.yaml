@@ -1,0 +1,230 @@
+type: "object"
+properties: 
+  status: 
+    type: "string"
+    description: ""
+  errorCode: 
+    type: "string"
+    description: ""
+  errorMessage: 
+    type: "string"
+    description: ""
+  data: 
+    type: "object"
+    properties: 
+      reportTime: 
+        type: "number"
+        description: ""
+      chargeState: 
+        type: "object"
+        properties: 
+          sts: 
+            type: "string"
+            description: ""
+          val: 
+            type: "string"
+            description: ""
+      acChargeModel: 
+        type: "object"
+        properties: 
+          sts: 
+            type: "string"
+            description: ""
+          val: 
+            type: "string"
+            description: ""
+      remainingBattery: 
+        type: "object"
+        properties: 
+          sts: 
+            type: "string"
+            description: ""
+          val: 
+            type: "string"
+            description: ""
+      rechargeMileage: 
+        type: "object"
+        properties: 
+          sts: 
+            type: "string"
+            description: ""
+          val: 
+            type: "string"
+            description: ""
+      chargeType: 
+        type: "object"
+        properties: 
+          sts: 
+            type: "string"
+            description: ""
+          val: 
+            type: "string"
+            description: ""
+      batteryHeatingState: 
+        type: "object"
+        properties: 
+          sts: 
+            type: "string"
+            description: ""
+      chargeModel: 
+        type: "object"
+        properties: 
+          sts: 
+            type: "string"
+            description: ""
+          val: 
+            type: "string"
+            description: ""
+      chargeVoltage: 
+        type: "object"
+        properties: 
+          sts: 
+            type: "string"
+            description: ""
+          val: 
+            type: "string"
+            description: ""
+      chargeCurrent: 
+        type: "object"
+        properties: 
+          sts: 
+            type: "string"
+            description: ""
+          val: 
+            type: "string"
+            description: ""
+      chargeTime: 
+        type: "object"
+        properties: 
+          sts: 
+            type: "string"
+            description: ""
+          val: 
+            type: "string"
+            description: ""
+      lastDischargeTime: 
+        type: "object"
+        properties: 
+          sts: 
+            type: "string"
+            description: ""
+          val: 
+            type: "string"
+            description: ""
+      chargeGunState: 
+        type: "object"
+        properties: 
+          sts: 
+            type: "string"
+            description: ""
+          val: 
+            type: "string"
+            description: ""
+      chargeDcCoverState: 
+        type: "object"
+        properties: 
+          sts: 
+            type: "string"
+            description: ""
+          val: 
+            type: "string"
+            description: ""
+      chargeAcCoverState: 
+        type: "object"
+        properties: 
+          sts: 
+            type: "string"
+            description: ""
+          val: 
+            type: "string"
+            description: ""
+      chargeLimitSet: 
+        type: "object"
+        properties: 
+          sts: 
+            type: "string"
+            description: ""
+          val: 
+            type: "string"
+            description: ""
+      disChargeLimitSet: 
+        type: "object"
+        properties: 
+          sts: 
+            type: "string"
+            description: ""
+          val: 
+            type: "string"
+            description: ""
+      lowBatterySet: 
+        type: "object"
+        properties: 
+          sts: 
+            type: "string"
+            description: ""
+          val: 
+            type: "string"
+            description: ""
+      timingStartTime: 
+        type: "object"
+        properties: 
+          sts: 
+            type: "string"
+            description: ""
+          val: 
+            type: "string"
+            description: ""
+      timingEndTime: 
+        type: "object"
+        properties: 
+          sts: 
+            type: "string"
+            description: ""
+          val: 
+            type: "string"
+            description: ""
+      timingToCharge: 
+        type: "object"
+        properties: 
+          sts: 
+            type: "string"
+            description: ""
+      dischargeVoltage: 
+        type: "object"
+        properties: 
+          sts: 
+            type: "string"
+            description: ""
+          val: 
+            type: "string"
+            description: ""
+      dischargeCurrent: 
+        type: "object"
+        properties: 
+          sts: 
+            type: "string"
+            description: ""
+          val: 
+            type: "string"
+            description: ""
+      lastHeatTime: 
+        type: "object"
+        properties: 
+          sts: 
+            type: "string"
+            description: ""
+          val: 
+            type: "string"
+            description: ""
+      enableSwitchState: 
+        type: "object"
+        properties: 
+          sts: 
+            type: "string"
+            description: ""
+          val: 
+            type: "string"
+            description: ""
+      networkStatus: 
+        type: "string"
+        description: ""

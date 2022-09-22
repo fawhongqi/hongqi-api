@@ -1,0 +1,38 @@
+type: "object"
+properties: 
+  errorMessage: 
+    type: "string"
+    description: ""
+  errorCode: 
+    type: "string"
+    description: ""
+  location: 
+    type: "object"
+    properties: 
+      id: 
+        type: "string"
+        description: ""
+      uniqueId: 
+        type: "string"
+        description: ""
+      longitude: 
+        type: "number"
+        description: ""
+      latitude: 
+        type: "number"
+        description: ""
+      altitude: 
+        type: "number"
+        description: ""
+      direction: 
+        type: "number"
+        description: ""
+      speed: 
+        type: "number"
+        description: ""
+      time: 
+        type: "number"
+        description: ""
+  status: 
+    type: "string"
+    description: ""
