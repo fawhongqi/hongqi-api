@@ -1,0 +1,7 @@
+name: globalCode
+in: query
+schema:
+  type: string
+example: '%2B47'
+required: true
+description: Unicode %2B for + (plus) sign in front of countrycode

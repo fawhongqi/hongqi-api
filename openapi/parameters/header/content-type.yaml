@@ -1,0 +1,5 @@
+name: content-type
+in: header
+schema:
+  type: string
+  default: '*/*'

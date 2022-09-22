@@ -1,0 +1,5 @@
+name: connection
+in: header
+schema:
+  type: string
+  default: Keep-Alive

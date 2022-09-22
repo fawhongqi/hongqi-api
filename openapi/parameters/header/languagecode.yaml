@@ -1,0 +1,6 @@
+name: languagecode
+in: header
+schema:
+  type: string
+example: en
+required: true

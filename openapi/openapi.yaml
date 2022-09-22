@@ -1,0 +1,95 @@
+openapi:  '3.1.0'
+info:
+  title: HONQGI API
+  version: 1.0.0  
+  x-logo:
+    image: "https://www.chinapev.com/wp-content/uploads/2019/08/FAW-HONGQI-LOGO.jpg"
+  description: |
+    
+    # Introduction
+    This is a unofficial documentation of the FAW Hongqi REST API used by their productline of cars. The work is mainly focused towards their flagship E-HS9,
+    but seems to apply for all of the cars with remote control functionality. 
+
+    It features functionality to monitor and control the vehicle (E-HS9). The work is currently community drivven as Hongqi has rejected to colaborate with owners of the vehicles or external integrators. 
+    
+    The intention of an documented api is to be able to integrate the car with smarter systems, utilize the power grid better and do tons of other cool stuff. 
+    One common usecase is the functionality of charing the car when the electricity prices are at its lowest, or when the powergrid is less utilized. To be able to acomplish this battery status is required.
+
+    <b>If any folks at FAW / Hongqi are reading this, I'd love to help coordinate a developer program for your APIs and create more transparency with roadmaps and what is going on. If there's any way 
+    we can be helpful, please feel free to get in contact. Also, We`d also love the possibility to be in the beta firmware program wink
+    </b>
+
+    ## VIN and uniqueId 
+    When requesting information from the APi the objects 'uniqueId' and 'vin' is used about each other. The is your VIN number but base64encoded after beeing AES encrypted and utf8 encoded.
+    There is attached a python script in the github repository that demonstrates the implementation. This is a one time operation for now, once you have retreived your scrambled VIN number once you are done. This might change in the future if salts and keys are randomly beeing rotated by Hongqi.
+
+  contact:
+    name: Community Contact Support
+    url: http://www.example.com/support
+    email: support@example.com
+
+servers:
+  - url: https://fawtsp-appgw-eu.faw.cn
+    description: FAW Hongqi API endpoint
+
+  
+paths:
+  /user/verifyCode/getVerifyCodeIgnoreMobile:
+    $ref:  './paths/getVerifyCodeIgnoreMobile.yaml'  
+  /user/account/verify/login:
+    $ref:  './paths/verifySms.yaml'           
+  /remote-charging/public/charge/getChargingStatus:
+    $ref:  './paths/getChargingStatus.yaml'
+  /location/public/location/getLastLocation:
+    $ref:  './paths/getLastLocation.yaml'      
+
+components:
+  parameters:
+    accept-encoding:
+      $ref:  './parameters/header/accept-encoding.yaml'
+    auth_token:
+      $ref: './parameters/header/auth_token.yaml'
+    connection:
+      $ref:  './parameters/header/connection.yaml'
+    content-type:
+      $ref:  './parameters/header/content-type.yaml'
+    host:
+      $ref:  './parameters/header/host.yaml'
+    languagecode:
+      $ref: './parameters/header/languagecode.yaml'
+    user-agent:
+      $ref: './parameters/header/user-agent.yaml'
+
+    appKey:
+      $ref: './parameters/query/appkey.yaml'
+    globalCode:
+      $ref: './parameters/query/globalCode.yaml'
+    mobile:
+      $ref: './parameters/query/mobile.yaml'
+    nonce:
+      $ref: './parameters/query/nonce.yaml'
+    ruleFlag:
+      $ref: './parameters/query/ruleFlag.yaml'
+    sign:
+      $ref: './parameters/query/sign.yaml'
+    signt:
+      $ref: './parameters/query/signt.yaml'
+    type:
+      $ref: './parameters/query/type.yaml'
+    uniqueId:
+      $ref: './parameters/query/uniqueId.yaml'
+    useFlag:
+      $ref: './parameters/query/useFlag.yaml'
+    vin:
+      $ref: './parameters/query/vin.yaml'
+    deviceId:
+      $ref: './parameters/query/deviceId.yaml'
+    appId:
+      $ref: './parameters/query/appId.yaml'      
+    
+  schemas:
+    verifySms:
+      $ref:  './schemas/verifySms.yaml'
+
+#   responses:
+#     $ref:  './responses/_index.yaml'

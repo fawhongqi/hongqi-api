@@ -1,0 +1,36 @@
+get:
+  tags:
+    - Login
+  summary: Request SMS Code
+  parameters:
+    - $ref: '#/components/parameters/accept-encoding'
+    - $ref: '#/components/parameters/connection'
+    - $ref: '#/components/parameters/content-type'
+    - $ref: '#/components/parameters/host'
+    - $ref: '#/components/parameters/languagecode'
+    - $ref: '#/components/parameters/user-agent'
+       
+    - $ref: '#/components/parameters/globalCode'
+    - $ref: '#/components/parameters/mobile'
+    - $ref: '#/components/parameters/useFlag'
+    - $ref: '#/components/parameters/ruleFlag'     
+    - $ref: '#/components/parameters/appkey'         
+    - $ref: '#/components/parameters/nonce'         
+    - $ref: '#/components/parameters/signt'         
+    - $ref: '#/components/parameters/sign'              
+      
+  x-codeSamples:
+    - lang: 'cURL'
+      label: 'cURL'
+      source: |
+        curl --location --request GET 'https://fawtsp-appgw-eu.faw.cn/user/verifyCode/getVerifyCodeIgnoreMobile?globalCode=%2B47&mobile=12345678&useFlag=carOwner_app_verifyLogin&ruleFlag=defaultRule' \
+        --header 'accept-encoding: gzip' \
+        --header 'connection: Keep-Alive' \
+        --header 'content-type: */*' \
+        --header 'host: fawtsp-appgw-eu.faw.cn' \
+        --header 'languagecode: en'
+  responses:
+    '200':
+      description: Successful response
+      content:
+        application/json: {}

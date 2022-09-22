@@ -1,0 +1,4 @@
+name: appkey
+in: query
+schema:
+  type: string

@@ -1,0 +1,8 @@
+name: uniqueId
+in: query
+schema:
+  type: string
+example: |
+  TqCLzB5LR5sASFiiNi8oaNdNAwOOdHGuehbAWxhmk1Y%3D%0A
+description: Vin number that is base64 and aes encrypted. Note -  %3D%0A is appended to the encrypted vin  
+required: true

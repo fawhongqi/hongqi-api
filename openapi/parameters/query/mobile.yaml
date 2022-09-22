@@ -1,0 +1,6 @@
+name: mobile
+in: query
+schema:
+  type: integer
+example: '12345678'
+required: true

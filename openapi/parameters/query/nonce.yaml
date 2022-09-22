@@ -1,0 +1,4 @@
+name: nonce
+in: query
+schema:
+  type: string

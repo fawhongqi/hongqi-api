@@ -1,0 +1,7 @@
+name: ruleFlag
+in: query
+schema:
+  type: string
+  default: defaultRule
+example: defaultRule
+required: true

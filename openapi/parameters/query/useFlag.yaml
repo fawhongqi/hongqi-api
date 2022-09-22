@@ -1,0 +1,7 @@
+name: useFlag
+in: query
+schema:
+  type: string
+  default: carOwner_app_verifyLogin
+example: carOwner_app_verifyLogin
+required: true

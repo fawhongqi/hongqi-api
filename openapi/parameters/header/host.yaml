@@ -1,0 +1,6 @@
+name: host
+in: header
+schema:
+  type: string
+  default: fawtsp-appgw-eu.faw.cn
+required: true
