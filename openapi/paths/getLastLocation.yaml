@@ -1,6 +1,6 @@
 get:
   tags:
-    - Service
+    - Information
   summary: Get Car Location
   parameters:
     - $ref: '#/components/parameters/accept-encoding'

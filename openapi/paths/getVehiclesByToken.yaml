@@ -1,6 +1,6 @@
 get: 
   tags:
-    - Service  
+    - Information  
   summary: "Get all car details"
   description: ""
   parameters: 

@@ -1,8 +1,8 @@
-    - name: auth_token
-      in: header
-      schema:
-        type: string
-      example: >-
-        eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVzIjoyNTkyMDAwLCJ1c2VyX2lkIjo2NTg1OTg2MjQwODY3MjA1MJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVzIjoyNTkyMDAwLCJ1c2VyX2lkIjo2NTg1OTg2MjQwODY3MjA1MJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVzIjoyNTkyMDAwLCJ1c2VyX2lkIjo2NTg1OTg2MjQwODY3MjA1MJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVzIjoyNTkyMDAwLCJ1c2VyX2lkIjo2NTg1OTg2MjQwODY3MjA1M
-      description: Access token provided during login
-       
+name: auth_token
+in: header
+schema:
+  type: string
+example: >-
+  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVzIjoyNTkyMDAwLCJ1c2VyX2lkIjo2NTg1OTg2MjQwODY3MjA1MJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVzIjoyNTkyMDAwLCJ1c2VyX2lkIjo2NTg1OTg2MjQwODY3MjA1MJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVzIjoyNTkyMDAwLCJ1c2VyX2lkIjo2NTg1OTg2MjQwODY3MjA1MJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVzIjoyNTkyMDAwLCJ1c2VyX2lkIjo2NTg1OTg2MjQwODY3MjA1M
+description: Access token provided during login
+  
