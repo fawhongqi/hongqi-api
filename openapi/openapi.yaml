@@ -21,12 +21,25 @@ info:
 
     ## VIN and uniqueId 
     When requesting information from the APi the objects 'uniqueId' and 'vin' is used about each other. The is your VIN number but base64encoded after beeing AES encrypted and utf8 encoded.
-    There is attached a python script in the github repository that demonstrates the implementation. This is a one time operation for now, once you have retreived your scrambled VIN number once you are done. This might change in the future if salts and keys are randomly beeing rotated by Hongqi.
+    There is attached a [python script](https://github.com/fawhongqi/hongqi-api/tree/main/tools/decrypter) in the [github repository](https://github.com/fawhongqi/hongqi-api/) that demonstrates the implementation. This is a one time operation for now, once you have retreived your scrambled VIN number once you are done. This might change in the future if salts and keys are randomly beeing rotated by Hongqi.
+
+    ## Authentication
+    Hongi API  offers two forms of authentication:
+      - SMS Code
+      - Username & Password
+      
+    Only one user can be logged in at any time regardless of authentication method of the user. Every user profile starts with a phone number so a cheap disposable or prepaid sim card would be required unless you would like to kick your self out. 
+    Any logged in user can then define username and password, and continue the login process by using mobile number + password (facepalm) . <b>Hint! It would be really great with the possibilities to define service accounts FAW! Stand out and be better than the other brands, see the possibilities!</b>
+
+    ## Contribution 
+
+    If anyone feel the call and would like to contribute to the process of documenting the API, and allow us to utilize the car at its full potential. Any help is welcome!
+    Please use the [github issue tracker](https://github.com/fawhongqi/hongqi-api/issues) to submit requests, issues and in general create pull requests.    
 
   contact:
-    name: Community Contact Support
-    url: http://www.example.com/support
-    email: support@example.com
+    name: Community issue (and request) tracker 
+    url: https://github.com/fawhongqi/hongqi-api/issues
+    email: hongqiapi@example.com
 
 servers:
   - url: https://fawtsp-appgw-eu.faw.cn
