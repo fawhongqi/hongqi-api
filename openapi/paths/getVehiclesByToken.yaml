@@ -50,6 +50,175 @@ get:
                 type: "string"
                 description: ""
               vehicleInfos: 
-                type: "string"
                 description: "base64encoded aes encrypted string, but contains an json list with all vehicle details"
-
+                type: "array"
+                items: 
+                  type: "object"
+                  properties: 
+                    avnVo: 
+                      type: "object"
+                      properties: 
+                        avnStatus: 
+                          type: "string"
+                          description: ""
+                    canControl: 
+                      type: "boolean"
+                      description: ""
+                    customerVo: 
+                      type: "object"
+                      properties: 
+                        id: 
+                          type: "number"
+                          description: ""
+                        mobile: 
+                          type: "string"
+                          description: ""
+                    defaultVehicle: 
+                      type: "boolean"
+                      description: ""
+                    platform: 
+                      type: "string"
+                      description: ""
+                    tboxVo: 
+                      type: "object"
+                      properties: 
+                        imei: 
+                          type: "string"
+                          description: ""
+                        manufacturer: 
+                          type: "string"
+                          description: ""
+                        simVo: 
+                          type: "object"
+                          properties: 
+                            iccid: 
+                              type: "string"
+                              description: ""
+                            imsi: 
+                              type: "string"
+                              description: ""
+                            phoneNumber: 
+                              type: "string"
+                              description: ""
+                            simStatus: 
+                              type: "string"
+                              description: ""
+                        sn: 
+                          type: "string"
+                          description: ""
+                        tboxStatus: 
+                          type: "string"
+                          description: ""
+                    useType: 
+                      type: "string"
+                      description: ""
+                    vehAccRelVo: 
+                      type: "object"
+                      properties: 
+                        aid: 
+                          type: "number"
+                          description: ""
+                        blacklist: 
+                          type: "boolean"
+                          description: ""
+                        canControl: 
+                          type: "boolean"
+                          description: ""
+                        defaultVehicle: 
+                          type: "boolean"
+                          description: ""
+                        effective: 
+                          type: "boolean"
+                          description: ""
+                        linkMan: 
+                          type: "string"
+                          description: ""
+                    vehCusRelVo: 
+                      type: "object"
+                      properties: 
+                        dealerCode: 
+                          type: "string"
+                          description: ""
+                        vid: 
+                          type: "string"
+                          description: ""
+                    vehUseRelVos: 
+                      type: "array"
+                      items: 
+                        type: "object"
+                        properties: 
+                          aid: 
+                            type: "number"
+                            description: ""
+                          canControl: 
+                            type: "boolean"
+                            description: ""
+                          id: 
+                            type: "number"
+                            description: ""
+                          isDefaul: 
+                            type: "boolean"
+                            description: ""
+                          linkMan: 
+                            type: "string"
+                            description: ""
+                          mobile: 
+                            type: "string"
+                            description: ""
+                          pin: 
+                            type: "string"
+                            description: ""
+                          remark: 
+                            type: "string"
+                            description: ""
+                    vehicleVo: 
+                      type: "object"
+                      properties: 
+                        engineNo: 
+                          type: "string"
+                          description: ""
+                        modelInfo: 
+                          type: "object"
+                          properties: 
+                            brandCode: 
+                              type: "string"
+                              description: ""
+                            brandName: 
+                              type: "string"
+                              description: ""
+                            code: 
+                              type: "string"
+                              description: ""
+                            modelShortCode: 
+                              type: "string"
+                              description: ""
+                            modelShortName: 
+                              type: "string"
+                              description: ""
+                            name: 
+                              type: "string"
+                              description: ""
+                            seriesCode: 
+                              type: "string"
+                              description: ""
+                            seriesName: 
+                              type: "string"
+                              description: ""
+                        simAudit: 
+                          type: "object"
+                          properties: {}
+                        vehicleColer: 
+                          type: "string"
+                          description: ""
+                        vehicleEnergyType: 
+                          type: "string"
+                          description: ""
+                        vehicleNumber: 
+                          type: "string"
+                          description: ""
+                        vehicleStatus: 
+                          type: "string"
+                          description: ""
+                        vin: 
+                          type: "string"
+                          description: ""
